@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">BMI Calculator</h2>
+      <p class="message hide">success or error message</p>
+      <form action="" class="form">
+        <div class="form__item">
+          <label for="height" class="form__label">height</label>
+          <input
+            type="text"
+            class="form__input"
+            id="height"
+            placeholder="height in feet"
+          />
+        </div>
+
+        <div class="form__item">
+          <label for="height" class="form__label">weight</label>
+          <input
+            type="text"
+            class="form__input"
+            id="weight"
+            placeholder="weight in kg"
+          />
+        </div>
+
+        <input type="submit" value="Calculate BMI" />
+      </form>
+
+      <div class="result">
+        <h2 class="heading">Result</h2>
+        <p class="result__text">
+          <span class="label">BMI: </span>
+          <span class="bmi" id="bmi">N/A</span>
+        </p>
+
+        <p class="result__text">
+          <span class="label">Classification: </span>
+          <span class="bmi" id="classification">N/A</span>
+        </p>
+
+        <p class="result__text">
+          <span class="label">Health Risk: </span>
+          <span class="bmi" id="risk">N/A</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
